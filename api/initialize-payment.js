@@ -2,11 +2,11 @@ const PRODUCTS = {
   1: {
     name: "Premium Rice",
     sizes: {
-      "50kg-bag": {
+      1: {
         label: "50kg Bag",
         price: 52000,
       },
-      "25kg-half-bag": {
+      2: {
         label: "25kg Half Bag",
         price: 25000,
       },
@@ -16,23 +16,23 @@ const PRODUCTS = {
   2: {
     name: "Semo",
     sizes: {
-      "10kg": {
+      1: {
         label: "10kg",
         price: 15500,
       },
-      "5kg": {
+      2: {
         label: "5kg",
         price: 7600,
       },
-      "2kg": {
+      3: {
         label: "2kg",
         price: 3000,
       },
-      "1kg": {
+      4: {
         label: "1kg",
         price: 1600,
       },
-      "500g": {
+      5: {
         label: "500g",
         price: 900,
       },
@@ -42,19 +42,19 @@ const PRODUCTS = {
   3: {
     name: "Groundnut Oil",
     sizes: {
-      "25-litres": {
+      1: {
         label: "25 Litres",
         price: 53000,
       },
-      "5-litres": {
+      2: {
         label: "5 Litres",
         price: 10500,
       },
-      "2.5-litres": {
+      3: {
         label: "2.5 Litres",
         price: 5300,
       },
-      "1-litre": {
+      4: {
         label: "1 Litre",
         price: 2000,
       },
@@ -64,19 +64,19 @@ const PRODUCTS = {
   4: {
     name: "Palm Oil",
     sizes: {
-      "25-litres": {
+      1: {
         label: "25 Litres",
         price: 50000,
       },
-      "5-litres": {
+      2: {
         label: "5 Litres",
         price: 11000,
       },
-      "2-litres": {
+      3: {
         label: "2 Litres",
         price: 4000,
       },
-      "1-litre": {
+      4: {
         label: "1 Litre",
         price: 2000,
       },
@@ -86,15 +86,15 @@ const PRODUCTS = {
   5: {
     name: "Spaghetti",
     sizes: {
-      "full-carton": {
+      1: {
         label: "Full Carton",
         price: 18600,
       },
-      "half-carton": {
+      2: {
         label: "Half Carton",
         price: 9300,
       },
-      "quarter-carton": {
+      3: {
         label: "Quarter Carton",
         price: 4800,
       },
@@ -104,7 +104,7 @@ const PRODUCTS = {
   6: {
     name: "Indomie Noodles",
     sizes: {
-      "1-carton": {
+      1: {
         label: "1 Carton",
         price: 9500,
       },
@@ -114,7 +114,7 @@ const PRODUCTS = {
   7: {
     name: "Mimee Instant Noodles",
     sizes: {
-      "1-carton": {
+      1: {
         label: "1 Carton",
         price: 8500,
       },
@@ -124,7 +124,7 @@ const PRODUCTS = {
   8: {
     name: "Salt",
     sizes: {
-      "1-pack": {
+      1: {
         label: "1 Pack",
         price: 500,
       },
@@ -134,11 +134,11 @@ const PRODUCTS = {
   9: {
     name: "Maggi Chicken Cubes",
     sizes: {
-      "170-cubes": {
+      1: {
         label: "170 Cubes Pack",
         price: 1700,
       },
-      "50-cubes": {
+      2: {
         label: "50 Cubes Pack",
         price: 500,
       },
