@@ -258,7 +258,11 @@ const CartPage = () => {
             <h2>Review Your Order Before Checkout</h2>
 
             {/* CUSTOMER DETAILS */}
-            <form className="sv-cart-customer" onSubmit={handleSubmit}>
+            <form
+              id="customer-order-form"
+              className="sv-cart-customer"
+              onSubmit={handleSubmit}
+            >
               <h3>Customer Details</h3>
 
               <div className="sv-cart-form-group">
