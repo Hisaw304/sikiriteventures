@@ -9,14 +9,8 @@ import Footer from "./components/Footer";
 // import FooterCTA from "./components/FooterCTA";
 import CartPage from "./pages/CartPage";
 import Products from "./pages/Products";
-// import AboutPage from "./pages/AboutPage";
-// import ContactPage from "./pages/ContactPage";
-// import FixturesPage from "./pages/FixturePage";
-// import News from "./pages/News";
-// import PlayersPage from "./pages/PlayersPage";
-// import PlayerDetails from "./pages/PlayerDetails";
-// import LegauesPage from "./pages/LegauesPage";
-// import UpdatePlayerImages from "./pages/UpdatePlayerImages";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Terms from "./pages/Terms";
 
 export default function App() {
   return (
@@ -27,6 +21,8 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
       </main>
 
