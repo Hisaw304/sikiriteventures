@@ -110,7 +110,7 @@ const Footer = () => {
               <Mail size={18} />
             </span>
 
-            <span>sikariteventuresltd@gmail.com</span>
+            <span>sikariteventuresnigltd@gmail.com</span>
           </a>
         </div>
       </div>
