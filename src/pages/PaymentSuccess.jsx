@@ -39,7 +39,7 @@ const PaymentSuccess = () => {
             <ArrowRight size={18} />
           </Link>
 
-          <Link to="/items" className="sv-payment-secondary">
+          <Link to="/products" className="sv-payment-secondary">
             View Available Items
           </Link>
         </div>
