@@ -11,7 +11,9 @@ import CartPage from "./pages/CartPage";
 import Products from "./pages/Products";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
-
+import PaymentSuccess from "./pages/PaymentSuccess";
+import PaymentFailed from "./pages/PaymentFailed";
+import PaymentCallback from "./pages/PaymentCallback";
 export default function App() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -23,6 +25,10 @@ export default function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
+          <Route path="/payment/callback" element={<PaymentCallback />} />
+          <Route path="/payment-success" element={<PaymentSuccess />} />
+          <Route path="/payment-failed" element={<PaymentFailed />} />
         </Routes>
       </main>
 

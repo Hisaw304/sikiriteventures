@@ -44,7 +44,7 @@ const Navbar = () => {
 
           <Link to="/products">Available Items</Link>
 
-          <Link to="/contact">Contact</Link>
+          {/* <Link to="/contact">Contact</Link> */}
         </nav>
 
         {/* ==========================================
@@ -111,9 +111,9 @@ const Navbar = () => {
             Available Items
           </Link>
 
-          <Link onClick={closeMenu} to="/contact">
+          {/* <Link onClick={closeMenu} to="/contact">
             Contact
-          </Link>
+          </Link> */}
 
           {/* WhatsApp inside mobile menu */}
           <a

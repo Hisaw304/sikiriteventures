@@ -30,7 +30,7 @@ const faqs = [
   {
     question: "Where is your store located?",
     answer:
-      "Our store is located at 3, Life Mission Street, Ile-Epo Bus Stop, Abule Egba, Lagos. You can also contact us if you need directions or more information.",
+      "Our store is located at 3, Life Mission Street, Ile-Eja Bus Stop, Command Abule Egba, Lagos-state. You can also contact us if you need directions or more information.",
   },
 ];
 

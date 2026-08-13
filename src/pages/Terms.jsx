@@ -31,8 +31,8 @@ const Terms = () => {
             </p>
 
             <p>
-              Our store is located at 3, Life Mission Street, Ile-Epo Bus Stop,
-              Abule Egba, Lagos.
+              Our store is located at 3, Life Mission Street, Ile-Eja Bus Stop,
+              Command Abule Egba, Lagos-state.
             </p>
           </section>
 

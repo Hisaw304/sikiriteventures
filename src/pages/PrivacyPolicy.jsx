@@ -319,8 +319,8 @@ const PrivacyPolicy = () => {
               </p>
 
               <p>
-                <strong>Address:</strong> 3, Life Mission Street, Ile-Epo Bus
-                Stop, Abule Egba, Lagos
+                <strong>Address:</strong> 3, Life Mission Street, Ile-Eja Bus
+                Stop, Command Abule Egba, Lagos-state.
               </p>
 
               <p>

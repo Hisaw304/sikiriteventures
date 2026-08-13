@@ -33,11 +33,11 @@ const AboutUs = () => {
             <p>
               3, Life Mission Street,
               <br />
-              Ile-Epo Bus Stop,
+              Ile-Eja Bus Stop, Command
               <br />
               Abule Egba,
               <br />
-              Lagos, Nigeria.
+              Lagos-state, Nigeria.
             </p>
           </div>
         </div>

@@ -49,25 +49,25 @@ const Footer = () => {
             <ArrowUpRight size={15} />
           </Link>
 
-          <Link to="/about">
+          <a href="#about">
             <span>About Us</span>
             <ArrowUpRight size={15} />
-          </Link>
+          </a>
 
-          <Link to="/how-it-works">
+          <a href="#how-it-works">
             <span>How It Works</span>
             <ArrowUpRight size={15} />
-          </Link>
+          </a>
 
-          <Link to="/items">
+          <Link to="/products">
             <span>Available Items</span>
             <ArrowUpRight size={15} />
           </Link>
 
-          <Link to="/contact">
+          {/* <Link to="/contact">
             <span>Contact Us</span>
             <ArrowUpRight size={15} />
-          </Link>
+          </Link> */}
         </div>
 
         {/* ==========================================
@@ -89,7 +89,8 @@ const Footer = () => {
             </span>
 
             <span>
-              3, Life Mission Street, Ile-Epo Bus Stop, Abule Egba, Lagos.
+              3, Life Mission Street, Ile-Eja Bus Stop, Command Abule Egba,
+              Lagos-state.
             </span>
           </a>
 
@@ -109,7 +110,7 @@ const Footer = () => {
               <Mail size={18} />
             </span>
 
-            <span>info@sikariteventures.com</span>
+            <span>sikariteventuresltd@gmail.com</span>
           </a>
         </div>
       </div>
