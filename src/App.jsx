@@ -14,6 +14,7 @@ import Terms from "./pages/Terms";
 import PaymentSuccess from "./pages/PaymentSuccess";
 import PaymentFailed from "./pages/PaymentFailed";
 import PaymentCallback from "./pages/PaymentCallback";
+import WhatsAppFloat from "./components/WhatsAppFloat";
 export default function App() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -31,7 +32,7 @@ export default function App() {
           <Route path="/payment-failed" element={<PaymentFailed />} />
         </Routes>
       </main>
-
+      <WhatsAppFloat />
       <Footer />
     </div>
   );
