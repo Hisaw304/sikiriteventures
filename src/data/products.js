@@ -63,7 +63,7 @@ const products = [
     name: "Premium Rice",
     category: "Grains",
     description:
-      "Premium quality Nigerian rice carefully selected for freshness and great taste. Perfect for everyday family meals, restaurants and bulk purchases.",
+      "Premium quality Foreign rice carefully selected for freshness and great taste. Perfect for everyday family meals, restaurants and bulk purchases.",
 
     sizes: [
       {
