@@ -21,6 +21,7 @@ const CartPage = () => {
     name: "",
     phone: "",
     email: "",
+    address: "",
   });
 
   const handleCustomerChange = (e) => {
@@ -40,6 +41,7 @@ const CartPage = () => {
     const name = customer.name.trim();
     const phone = customer.phone.trim();
     const email = customer.email.trim();
+    const address = customer.address.trim();
 
     if (!name) {
       setFormError("Please enter your full name.");
@@ -61,6 +63,11 @@ const CartPage = () => {
       return;
     }
 
+    if (!address) {
+      setFormError("Please enter your delivery address.");
+      return;
+    }
+
     setFormError("");
     setIsSubmitting(true);
 
@@ -75,6 +82,7 @@ const CartPage = () => {
             name,
             phone,
             email,
+            address,
           },
 
           items: cartItems.map((item) => ({
@@ -92,7 +100,6 @@ const CartPage = () => {
       }
 
       // Save the customer/order information temporarily.
-      // We will use this after Paystack redirects back.
       localStorage.setItem(
         "sv-pending-order",
         JSON.stringify({
@@ -100,6 +107,7 @@ const CartPage = () => {
             name,
             phone,
             email,
+            address,
           },
           items: cartItems,
           productsTotal: cartTotal,
@@ -313,6 +321,22 @@ const CartPage = () => {
                 />
               </div>
 
+              <div className="sv-cart-form-group">
+                <label htmlFor="customer-address">
+                  Delivery Address <span>*</span>
+                </label>
+
+                <input
+                  id="customer-address"
+                  name="address"
+                  type="text"
+                  value={customer.address}
+                  onChange={handleCustomerChange}
+                  placeholder="Enter your delivery address"
+                  required
+                />
+              </div>
+
               {formError && <p className="sv-cart-form-error">{formError}</p>}
             </form>
             {/* ORDER TOTAL */}
@@ -339,6 +363,12 @@ const CartPage = () => {
               Delivery costs may vary depending on your location, order size,
               quantity, and other delivery requirements. The final delivery cost
               will be confirmed with you before your order is processed.
+              <br />
+              By proceeding with your order, you agree to our{" "}
+              <Link to="/terms" className="sv-cart-terms-link">
+                Terms & Conditions
+              </Link>
+              .
             </p>
 
             <button

@@ -4082,6 +4082,17 @@ body {
   transform: translateY(-2px);
 }
 
+.sv-cart-terms-link {
+  color: var(--color-primary);
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.sv-cart-terms-link:hover {
+  text-decoration: underline;
+}
+
 /* ==========================================
    TABLET
 ========================================== */

@@ -91,7 +91,7 @@ export const sendCustomerEmail = async ({
             order has been confirmed.
           </p>
 
-          <div
+         <div
             style="
               background:#F8F6F1;
               padding:18px;
@@ -110,6 +110,25 @@ export const sendCustomerEmail = async ({
             >
               ${reference}
             </p>
+
+            <div
+              style="
+                margin-top:18px;
+                padding-top:15px;
+                border-top:1px solid #E5E7EB;
+              "
+            >
+              <strong>Delivery Address</strong>
+
+              <p
+                style="
+                  margin:5px 0 0;
+                  color:#1F2937;
+                "
+              >
+                ${customer.address}
+              </p>
+            </div>
           </div>
 
           <h3>Your Order</h3>
@@ -239,6 +258,11 @@ export const sendOwnerEmail = async ({
           <p>
             <strong>Email:</strong>
             ${customer.email}
+          </p>
+
+          <p>
+            <strong>Delivery Address:</strong>
+            ${customer.address}
           </p>
 
           <p>

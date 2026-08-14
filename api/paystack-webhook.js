@@ -127,6 +127,8 @@ export default async function handler(req, res) {
 
     const customerPhone = metadata.customer_phone || "";
 
+    const customerAddress = metadata.customer_address || "";
+
     const items = Array.isArray(metadata.items) ? metadata.items : [];
 
     const productsTotal = Number(metadata.products_total) || 0;
@@ -161,6 +163,7 @@ export default async function handler(req, res) {
         name: customerName,
         phone: customerPhone,
         email: verifiedTransaction.customer?.email || "",
+        address: customerAddress,
       },
 
       items,

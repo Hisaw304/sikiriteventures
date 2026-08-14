@@ -164,6 +164,7 @@ export default async function handler(req, res) {
     const name = customer?.name?.trim();
     const phone = customer?.phone?.trim();
     const email = customer?.email?.trim();
+    const address = customer?.address?.trim();
 
     if (!name) {
       return res.status(400).json({
@@ -183,6 +184,13 @@ export default async function handler(req, res) {
       return res.status(400).json({
         success: false,
         message: "Customer email is required.",
+      });
+    }
+
+    if (!address) {
+      return res.status(400).json({
+        success: false,
+        message: "Customer address is required.",
       });
     }
 
@@ -295,7 +303,7 @@ export default async function handler(req, res) {
           metadata: {
             customer_name: name,
             customer_phone: phone,
-
+            customer_address: address,
             items: validatedItems,
 
             products_total: productsTotal,
